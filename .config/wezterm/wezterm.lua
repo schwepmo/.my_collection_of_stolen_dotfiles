@@ -51,10 +51,10 @@ config.keys = {
 config.colors = {
   foreground = '#c5c9c5',
   background = '#181616',
-
+  --
   cursor_bg = '#C8C093',
-  cursor_fg = '#C8C093',
   cursor_border = '#C8C093',
+  cursor_fg = 'black',
 
   selection_fg = '#C8C093',
   selection_bg = '#2D4F67',
