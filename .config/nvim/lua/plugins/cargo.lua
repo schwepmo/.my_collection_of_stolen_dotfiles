@@ -13,7 +13,7 @@ return {
       show_cursor_line = true, -- Highlight current line in output window
 
       -- Auto-close settings
-      -- auto_close = true, -- Auto close window on success
+      auto_close = false, -- Auto close window on success
       -- close_timeout = 5000, -- Close window after 5000ms
 
       -- Timeout settings

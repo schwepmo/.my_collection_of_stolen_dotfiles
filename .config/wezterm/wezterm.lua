@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 
 -- For example, changing the initial geometry for new windows:
 config.initial_cols = 150
-config.initial_rows = 100
+config.initial_rows = 200
 
 -- or, changing the font size and color scheme.
 config.font = wezterm.font('JetBrainsMono Nerd Font', {})
