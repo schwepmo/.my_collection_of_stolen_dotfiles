@@ -1,0 +1,67 @@
+return {
+  'folke/which-key.nvim',
+  event = 'VimEnter', -- Sets the loading event to 'VimEnter'
+  opts = {
+    -- delay between pressing a key and opening which-key (milliseconds)
+    -- this setting is independent of vim.o.timeoutlen
+    delay = 0,
+    icons = {
+      mappings = true,
+      keys = {},
+    },
+
+    -- Document existing key chains
+    spec = {
+      { '<leader>s', group = '[S]earch', icon = { icon = ' ', color = 'green' } },
+      { '<leader>d', group = '[D]ebug', icon = { icon = '󰃤 ', color = 'red' } },
+      { '<leader>l', group = '[L]SP', icon = { icon = '\u{EBA2} ', color = 'blue' } },
+      { '<leader>t', group = '[T]oggle', icon = { icon = ' ', color = 'yellow' } },
+      { '<leader>h', group = 'Git [H]unk', icon = { icon = ' ', color = 'blue' }, mode = { 'n', 'v' } },
+      { '<leader>H', group = '[H]arpoon', icon = { icon = '󰛢 ', color = 'blue' } },
+      { '<leader>u', icon = { icon = '󰕍 ', color = 'green' } },
+      { '<leader>f', icon = { icon = '󰛖 ', color = 'blue' } },
+    },
+  },
+}
+
+--   { plugin = "fzf-lua", cat = "filetype", name = "fzf" },
+--   { plugin = "neo-tree.nvim", cat = "filetype", name = "neo-tree" },
+--   { plugin = "octo.nvim", cat = "filetype", name = "git" },
+--   { plugin = "yanky.nvim", icon = "󰅇", color = "yellow" },
+--   { plugin = "zen-mode.nvim", icon = "󱅻 ", color = "cyan" },
+--   { plugin = "telescope.nvim", pattern = "telescope", icon = "", color = "blue" },
+--   { plugin = "trouble.nvim", cat = "filetype", name = "trouble" },
+--   { plugin = "todo-comments.nvim", cat = "file", name = "TODO" },
+--   { plugin = "grapple.nvim", pattern = "grapple", icon = "󰛢", color = "azure" },
+--   { plugin = "nvim-spectre", icon = "󰛔 ", color = "blue" },
+--   { plugin = "grug-far.nvim", pattern = "grug", icon = "󰛔 ", color = "blue" },
+--   { plugin = "noice.nvim", pattern = "noice", icon = "󰈸", color = "orange" },
+--   { plugin = "persistence.nvim", icon = " ", color = "azure" },
+--   { plugin = "neotest", cat = "filetype", name = "neotest-summary" },
+--   { plugin = "lazy.nvim", cat = "filetype", name = "lazy" },
+--   { plugin = "snacks.nvim", icon = "󱥰 ", color = "purple" },
+--   { plugin = "refactoring.nvim", pattern = "refactor", icon = " ", color = "cyan" },
+--   { pattern = "profiler", icon = "⚡", color = "orange" },
+--   { plugin = "CopilotChat.nvim", icon = " ", color = "orange" },
+--   { pattern = "%f[%a]git", cat = "filetype", name = "git" },
+--   { pattern = "terminal", icon = " ", color = "red" },
+--   { pattern = "find", icon = " ", color = "green" },
+--   { pattern = "search", icon = " ", color = "green" },
+--   { pattern = "test", cat = "filetype", name = "neotest-summary" },
+--   { pattern = "lazy", cat = "filetype", name = "lazy" },
+--   { pattern = "buffer", icon = "󰈔", color = "cyan" },
+--   { pattern = "file", icon = "󰈔", color = "cyan" },
+--   { pattern = "window", icon = " ", color = "blue" },
+--   { pattern = "diagnostic", icon = "󱖫 ", color = "green" },
+--   { pattern = "format", icon = " ", color = "cyan" },
+--   { pattern = "debug", icon = "󰃤 ", color = "red" },
+--   { pattern = "code", icon = " ", color = "orange" },
+--   { pattern = "notif", icon = "󰵅 ", color = "blue" },
+--   { pattern = "toggle", icon = " ", color = "yellow" },
+--   { pattern = "session", icon = " ", color = "azure" },
+--   { pattern = "exit", icon = "󰈆 ", color = "red" },
+--   { pattern = "quit", icon = "󰈆 ", color = "red" },
+--   { pattern = "tab", icon = "󰓩 ", color = "purple" },
+--   { pattern = "%f[%a]ai", icon = " ", color = "green" },
+--   { pattern = "ui", icon = "󰙵 ", color = "cyan" },
+-- }
